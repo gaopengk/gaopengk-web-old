@@ -16,56 +16,12 @@
       <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
-      <style type="text/css">
-
-.cwbr-con ul li{
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  border-bottom: 1px dashed #d0c4bc;
-}
-.cwbr-con ul li p.cc-text{
-  width: 70%;
-  font-size: 16px;
-}
-.cwbr-con ul li p.cc-icon-player{
-  width: 20px;
-  height: 60px;
-  background-image: url("../images/player.gif");
-  background-repeat: no-repeat;
-  background-position: 5px 22px;
-  background-size: 18px 15px;
-  display: none;
-}
-.cwbr-con ul li p a{
-  color: #907363;
-  cursor: pointer;
-}
-  </style>
   </head>
   <body>
     <main role="main" class="container">
       <h1 class="mt-5">gaopeng的测试页</h1>
       <p class="lead">你好，世界！</p>
-      
-            <div class="cwbr-con">
-                    <ul>
-                    <li>
-                        <p class="cc-text fl dhsl">音频名称音频名称音频</p>
-                        <p class="cc-icon-player fl"></p>
-                        <p class="cc-icon-close fr" style="display: none"><a  class="pauseAuto"><i class="iconfont icon-zanting"></i></a></p>
-                        <p class="cc-icon-open fr" ><a  class="openmusic"><i class="iconfont icon-bofang"></i></a></p>
-                        <audio style="display:none; height: 0" preload="auto" src="http://123.184.152.27/amobile.music.tc.qq.com/C400003tESUr1kWEDa.m4a?guid=7640117364&vkey=397D6CCB85B6ED3AA8F2C541DBB1FEB19E0909A38ACEC1279FDAAEC0FAEA7711B6BB9993C556884A514F6B8AECEB3E388AEC090ED8A4ACA6&uin=4362&fromtag=66" ></audio>
-                    </li>
-                    <li>
-                        <p class="cc-text fl dhsl">音频名称音频名称音频名称</p>
-                        <p class="cc-icon-player fl"></p>
-                        <p class="cc-icon-close fr" style="display: none"><a  class="pauseAuto"><i class="iconfont icon-zanting"></i></a></p>
-                        <p class="cc-icon-open fr" ><a  class="openmusic"><i class="iconfont icon-bofang"></i></a></p>
-                        <audio style="display:none; height: 0" preload="auto" src="audio/一千个伤心的理由%20(clip).mp3" ></audio>
-                    </li>
-                </ul>
-            </div>
+      <audio src="http://123.184.152.27/amobile.music.tc.qq.com/C400003tESUr1kWEDa.m4a?guid=7640117364&vkey=397D6CCB85B6ED3AA8F2C541DBB1FEB19E0909A38ACEC1279FDAAEC0FAEA7711B6BB9993C556884A514F6B8AECEB3E388AEC090ED8A4ACA6&uin=4362&fromtag=66" ></audio>
     </main>
 
     <footer class="container py-5">
@@ -113,26 +69,6 @@
         </div>-->
       </div>
     </footer>
-
-<script>
-    $(".cwbr-con").find("li .openmusic").click(function () {
-        // 获取到audio 元素对象
-        var audio = $(this).parent().siblings().find("audio").prevObject[3];
-        audio.play();
-        $(this).parent().siblings(".cc-icon-close").css({"display":"block"});
-        $(this).parent().siblings(".cc-icon-player").css({"display":"block"});
-        $(this).parent(".cc-icon-open").css({"display":"none"});
-    })
- 
-    $(".cwbr-con").find("li .pauseAuto").click(function () {
-        // 获取到audio 元素对象
-        var audio = $(this).parent().siblings().find("audio").prevObject[3];
-        audio.pause();
-        $(this).parent().siblings(".cc-icon-open").css({"display":"block"});
-        $(this).parent().siblings(".cc-icon-player").css({"display":"none"});
-        $(this).parent(".cc-icon-close").css({"display":"none"});
-    })
-</script>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
