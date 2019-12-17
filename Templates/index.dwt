@@ -64,11 +64,7 @@
 <!-- Main component for a primary marketing message or call to action -->
 
 <div class="row">
-  <div class="col-md-8">
-<!-- TemplateBeginEditable name="main" -->
-<!-- TemplateEndEditable -->
-    </div>
-  </div>
+  <div class="col-md-8"> <!-- TemplateBeginEditable name="main" --> <!-- TemplateEndEditable --> </div>
   <div class="col-md-4">
     <table class="table table-hover">
       <tr class="active">
